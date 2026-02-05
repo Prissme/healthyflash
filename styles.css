@@ -48,9 +48,14 @@ a {
 }
 
 .logo {
-  font-weight: 800;
-  font-size: 1.25rem;
-  color: var(--primary);
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  height: 56px;
+  width: auto;
+  display: block;
 }
 
 .nav-links {
