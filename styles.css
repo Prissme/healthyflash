@@ -297,6 +297,20 @@ a {
   box-shadow: 0 18px 34px rgba(0, 0, 0, 0.35);
 }
 
+
+
+html {
+  background: var(--bg);
+}
+
+.recipes-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
 .testimonials {
   display: grid;
   gap: 18px;
