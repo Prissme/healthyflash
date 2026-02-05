@@ -270,12 +270,22 @@ a {
   border-radius: 32px;
 }
 
-.recipes-gallery {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: wrap;
+.recipes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.recipes article {
+  background: var(--surface);
+  padding: 20px;
+  border-radius: 18px;
+  border: 1px solid var(--surface-border);
+}
+
+.recipes h4 {
+  color: var(--primary-dark);
+  margin-bottom: 6px;
 }
 
 .recipe-circle-image {
