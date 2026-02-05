@@ -4,7 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Healthy Flash — Recettes saines, rapides et délicieuses</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20260205">
+  <style>
+    /* Fallback critique si la feuille externe est en cache ou non chargée */
+    html, body { background: #0d1210; color: #eef5f2; font-family: "Manrope", sans-serif; }
+    body { margin: 0; line-height: 1.6; }
+    .site-header { position: sticky; top: 0; background: rgba(13, 18, 16, 0.9); border-bottom: 1px solid #25312c; z-index: 10; }
+    .nav { max-width: 1100px; margin: 0 auto; padding: 18px 24px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .logo-image { width: 42px; height: 42px; max-width: 42px; object-fit: contain; display: block; border-radius: 50%; }
+    .recipe-circle-image { width: min(320px, 86vw); aspect-ratio: 1 / 1; border-radius: 50%; object-fit: cover; }
+  </style>
   <link rel="icon" type="image/png" href="https://github.com/Prissme/healthyflash/blob/main/LogoHealthyFlash-removebg-preview.png?raw=true">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +23,7 @@
   <header class="site-header">
     <nav class="nav">
       <div class="logo">
-        <img src="https://github.com/Prissme/healthyflash/blob/main/LogoHealthyFlash-removebg-preview.png?raw=true" alt="Logo Healthy Flash" class="logo-image">
+        <img src="https://github.com/Prissme/healthyflash/blob/main/LogoHealthyFlash-removebg-preview.png?raw=true" alt="Logo Healthy Flash" class="logo-image" width="42" height="42">
       </div>
       <div class="nav-links">
         <a href="#livre">Le livre</a>
@@ -52,7 +61,7 @@
         </div>
       </div>
       <div class="hero-card" aria-hidden="true">
-        <img src="https://github.com/Prissme/healthyflash/blob/main/Screenshot%202026-02-05%2011.34.27.png?raw=true" alt="Couverture Healthy Flash" class="hero-promo-image">
+        <img src="https://github.com/Prissme/healthyflash/blob/main/Screenshot%202026-02-05%2011.34.27.png?raw=true" alt="Couverture Healthy Flash" class="hero-promo-image" width="640" height="360">
         <div class="book-info">
           <p>Inclut des plans de repas, des bons de réduction et des listes de courses prêtes à l'emploi.</p>
         </div>
@@ -86,8 +95,8 @@
         <p>Un avant-goût de recettes rapides, abordables et prêtes en 10 minutes.</p>
       </div>
       <div class="recipes-gallery">
-        <img src="https://github.com/Prissme/healthyflash/blob/main/WrapsCheeseburger.jpeg?raw=true" alt="Wrap cheeseburger Healthy Flash" class="recipe-circle-image">
-        <img src="https://github.com/Prissme/healthyflash/blob/main/t%C3%A9l%C3%A9chargement.jpeg?raw=true" alt="Recette Healthy Flash" class="recipe-circle-image">
+        <img src="https://github.com/Prissme/healthyflash/blob/main/WrapsCheeseburger.jpeg?raw=true" alt="Wrap cheeseburger Healthy Flash" class="recipe-circle-image" width="320" height="320">
+        <img src="https://github.com/Prissme/healthyflash/blob/main/t%C3%A9l%C3%A9chargement.jpeg?raw=true" alt="Recette Healthy Flash" class="recipe-circle-image" width="320" height="320">
       </div>
     </section>
 
