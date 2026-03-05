@@ -187,6 +187,7 @@ a {
 }
 
 .hero-card {
+  position: relative;
   background: var(--secondary);
   border-radius: 24px;
   padding: 28px;
@@ -389,6 +390,7 @@ blockquote cite {
 }
 
 .cta-box {
+  position: relative;
   background: var(--primary);
   color: #fff;
   padding: 28px;
@@ -435,6 +437,21 @@ blockquote {
     0 0 12px rgba(46, 250, 37, 0.25),
     0 0 24px rgba(109, 247, 210, 0.2),
     0 18px 34px rgba(0, 0, 0, 0.35);
+}
+
+.hero-card::before,
+.cta-box::before {
+  content: "";
+  position: absolute;
+  inset: -12px;
+  z-index: -1;
+  border-radius: inherit;
+  background: radial-gradient(circle, rgba(46, 250, 37, 0.35) 0%, rgba(46, 250, 37, 0.12) 45%, rgba(46, 250, 37, 0) 75%);
+  filter: blur(10px);
+}
+
+.recipe-circle-image {
+  filter: drop-shadow(0 0 16px rgba(46, 250, 37, 0.45)) drop-shadow(0 0 28px rgba(46, 250, 37, 0.25));
 }
 
 .site-footer {
